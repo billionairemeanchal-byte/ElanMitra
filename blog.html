@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MITRA Blog — Kanjivaram Saree Guide & Indian Ethnic Fashion</title>
+<meta name="description" content="Expert guides on Kanjivaram silk sarees, how to identify pure silk, bridal saree tips and Indian ethnic fashion. By MITRA — Indian Ethnic Sarees.">
+<meta property="og:title" content="MITRA Blog — Kanjivaram Saree Guides">
+<meta property="og:description" content="Everything you need to know about Kanjivaram silk sarees — authenticity, care, styling and more.">
+<meta property="og:url" content="https://elanmitra.com/blog.html">
+<link rel="canonical" href="https://elanmitra.com/blog.html">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#C9A84C;
+  --navy:#0F1923;
+  --cream:#FDF8F0;
+  --white:#FFFFFF;
+  --text:#2C2C2C;
+  --muted:#777;
+  --border:#E8E0D0;
+  --saffron:#E8841A;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--text);line-height:1.7;}
+
+/* NAV */
+nav{background:var(--navy);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);letter-spacing:3px;text-decoration:none;}
+.nav-links{display:flex;gap:24px;}
+.nav-links a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;letter-spacing:1px;transition:color .2s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-shop{background:var(--gold);color:var(--navy)!important;padding:8px 18px;border-radius:4px;font-weight:600;}
+
+/* HERO */
+.blog-hero{background:var(--navy);padding:80px 24px 60px;text-align:center;}
+.blog-hero-tag{color:var(--gold);font-size:11px;letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;}
+.blog-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,52px);color:var(--white);font-weight:600;margin-bottom:16px;line-height:1.2;}
+.blog-hero p{color:rgba(255,255,255,0.6);font-size:15px;max-width:500px;margin:0 auto;}
+
+/* ARTICLES GRID */
+.blog-container{max-width:1100px;margin:0 auto;padding:60px 24px;}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:60px;}
+@media(max-width:768px){.blog-grid{grid-template-columns:1fr;}.nav-links{display:none;}}
+@media(max-width:1024px){.blog-grid{grid-template-columns:repeat(2,1fr);}}
+
+/* CARD */
+.blog-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.06);transition:transform .25s,box-shadow .25s;cursor:pointer;}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,0.12);}
+.blog-card-img{height:200px;display:flex;align-items:center;justify-content:center;font-size:64px;}
+.blog-card-body{padding:24px;}
+.blog-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;}
+.blog-card h2{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;margin-bottom:10px;line-height:1.3;}
+.blog-card p{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:16px;}
+.blog-meta{font-size:11px;color:var(--muted);display:flex;gap:12px;}
+.read-more{display:inline-block;margin-top:12px;color:var(--gold);font-size:12px;font-weight:600;letter-spacing:1px;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px;}
+
+/* FULL ARTICLE */
+.article-section{display:none;background:var(--white);border-radius:16px;padding:48px;margin-bottom:40px;box-shadow:0 2px 24px rgba(0,0,0,0.06);}
+.article-section.active{display:block;}
+.article-back{background:none;border:1px solid var(--border);padding:8px 20px;border-radius:4px;cursor:pointer;font-size:13px;margin-bottom:32px;color:var(--text);}
+.article-section h1{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;margin-bottom:16px;line-height:1.2;}
+.article-meta{font-size:12px;color:var(--muted);margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border);}
+.article-section h2{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;margin:36px 0 12px;color:var(--navy);}
+.article-section h3{font-size:16px;font-weight:600;margin:24px 0 8px;color:var(--navy);}
+.article-section p{font-size:15px;color:#444;line-height:1.8;margin-bottom:16px;}
+.article-section ul,.article-section ol{padding-left:24px;margin-bottom:16px;}
+.article-section li{font-size:15px;color:#444;line-height:1.8;margin-bottom:6px;}
+.article-tip{background:var(--cream);border-left:3px solid var(--gold);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:14px;color:var(--text);}
+.article-cta{background:var(--navy);color:var(--white);padding:32px;border-radius:12px;text-align:center;margin:40px 0;}
+.article-cta h3{font-family:'Cormorant Garamond',serif;font-size:24px;margin-bottom:8px;}
+.article-cta p{font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:20px;}
+.article-cta a{background:var(--gold);color:var(--navy);padding:12px 32px;border-radius:4px;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:1px;}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:32px 24px;font-size:12px;}
+footer a{color:var(--gold);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">MITRA</a>
+  <div class="nav-links">
+    <a href="index.html">Shop</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html" class="nav-shop">Shop Sarees →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="blog-hero">
+  <div class="blog-hero-tag">🪔 The MITRA Journal</div>
+  <h1>Everything About<br>Indian Ethnic Sarees</h1>
+  <p>Expert guides, styling tips and the stories behind India's most cherished handwoven silk sarees.</p>
+</div>
+
+<!-- BLOG GRID -->
+<div class="blog-container">
+  <div id="blogGrid">
+    <div class="blog-grid">
+
+      <div class="blog-card" onclick="showArticle('a1')">
+        <div class="blog-card-img" style="background:#4A0A0A22;">🧵</div>
+        <div class="blog-card-body">
+          <div class="blog-tag">Buyer's Guide</div>
+          <h2>5 Ways to Identify a Pure Kanjivaram Silk Saree</h2>
+          <p>Don't get fooled by imitations. Here's exactly how to tell if a Kanjivaram saree is genuine pure silk before you buy.</p>
+          <div class="blog-meta"><span>📅 October 2026</span><span>⏱ 5 min read</span></div>
+          <a class="read-more">Read Article →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" onclick="showArticle('a2')">
+        <div class="blog-card-img" style="background:#3D0A1E22;">👰</div>
+        <div class="blog-card-body">
+          <div class="blog-tag">Bridal Guide</div>
+          <h2>How to Choose the Perfect Kanjivaram Saree for Your Wedding</h2>
+          <p>From colour to zari weight — a complete guide for brides and their families to pick the right Kanjivaram for the big day.</p>
+          <div class="blog-meta"><span>📅 October 2026</span><span>⏱ 6 min read</span></div>
+          <a class="read-more">Read Article →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" onclick="showArticle('a3')">
+        <div class="blog-card-img" style="background:#01442122;">✨</div>
+        <div class="blog-card-body">
+          <div class="blog-tag">Care Guide</div>
+          <h2>How to Store & Care for Your Silk Saree to Last Generations</h2>
+          <p>A pure silk Kanjivaram can last 50+ years if cared for correctly. Here's how to store, wash and preserve your precious saree.</p>
+          <div class="blog-meta"><span>📅 October 2026</span><span>⏱ 4 min read</span></div>
+          <a class="read-more">Read Article →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ARTICLE 1 -->
+  <div id="a1" class="article-section">
+    <button class="article-back" onclick="showGrid()">← Back to Blog</button>
+    <div class="blog-tag">Buyer's Guide</div>
+    <h1>5 Ways to Identify a Pure Kanjivaram Silk Saree</h1>
+    <div class="article-meta">📅 October 2026 &nbsp;|&nbsp; ⏱ 5 min read &nbsp;|&nbsp; By MITRA</div>
+
+    <p>The Kanjivaram saree is one of India's most prized possessions — a symbol of culture, tradition and exquisite craftsmanship. But with so many imitations flooding the market, how do you know if you're buying the real thing?</p>
+    <p>Here are 5 foolproof ways to identify a genuine pure silk Kanjivaram saree before you spend your hard-earned money.</p>
+
+    <h2>1. The Silk Mark India Label</h2>
+    <p>The easiest and most reliable way to verify authenticity is the <strong>Silk Mark India</strong> certification — a hologram tag issued by the Central Silk Board of India. Every genuine pure silk saree should carry this tag.</p>
+    <p>Look for it attached to the saree, usually near the pallu or border. The hologram changes colour when tilted — a fake cannot replicate this.</p>
+    <div class="article-tip">💡 All MITRA sarees are Silk Mark India Certified. This is our guarantee of pure silk quality.</div>
+
+    <h2>2. The Burn Test</h2>
+    <p>Pure silk burns slowly, smells like burnt hair, and leaves ash that crumbles to powder. Synthetic or artificial silk catches fire quickly, smells like burning plastic, and leaves hard beads of residue.</p>
+    <p>Ask the seller if you can test a loose thread from the fringe. A genuine seller will not hesitate.</p>
+
+    <h2>3. The Ring Test</h2>
+    <p>Pure silk is incredibly fine. A genuine Kanjivaram saree (without the heavy zari border) can be passed through a finger ring. Synthetic fabrics are stiffer and will not pass through easily.</p>
+    <div class="article-tip">💡 Note: Very heavy bridal Kanjivarams with thick zari may not pass the ring test even if pure silk — the zari adds weight and stiffness.</div>
+
+    <h2>4. Check the Zari (Gold Border)</h2>
+    <p>Genuine Kanjivaram sarees use <strong>real or semi-real zari</strong> — silver wire coated with gold. When you look closely at the border, the gold should have a slight warm, matte glow, not a flashy bright shine.</p>
+    <p>Fake zari feels plastic-like and loses colour quickly after a few washes. Real zari retains its lustre for decades.</p>
+
+    <h2>5. The Separate Warp and Weft</h2>
+    <p>Kanjivaram sarees are unique because the body and border are woven separately and then interlocked — not woven as one piece. This is what makes them structurally different from other silk sarees.</p>
+    <p>Look at the join between the body and border on the reverse side. If you can see a clear interlocking of threads — it's a genuine Kanjivaram technique.</p>
+
+    <h2>Why This Matters</h2>
+    <p>A genuine Kanjivaram silk saree is not just a garment — it is an investment. With proper care, it lasts 50–100 years and can be passed down as a family heirloom. Buying a fake means you're paying premium prices for something that will fade, fray and lose value within years.</p>
+
+    <div class="article-cta">
+      <h3>Shop Certified Pure Silk Sarees</h3>
+      <p>All MITRA sarees are Silk Mark India Certified — your guarantee of genuine Kanjivaram quality.</p>
+      <a href="index.html">Browse Collection →</a>
+    </div>
+  </div>
+
+  <!-- ARTICLE 2 -->
+  <div id="a2" class="article-section">
+    <button class="article-back" onclick="showGrid()">← Back to Blog</button>
+    <div class="blog-tag">Bridal Guide</div>
+    <h1>How to Choose the Perfect Kanjivaram Saree for Your Wedding</h1>
+    <div class="article-meta">📅 October 2026 &nbsp;|&nbsp; ⏱ 6 min read &nbsp;|&nbsp; By MITRA</div>
+
+    <p>Your wedding saree is perhaps the most important garment you will ever wear. It will be in your wedding photographs forever, and if cared for well, your daughter may wear it too. Choosing the right Kanjivaram bridal saree is a deeply personal decision — but there are some timeless guidelines that will help.</p>
+
+    <h2>1. Choose the Colour Wisely</h2>
+    <p>Colour is the first decision and the most personal. Traditionally, South Indian brides wear red or maroon Kanjivarams — these colours symbolise auspiciousness and fertility. But today brides also choose:</p>
+    <ul>
+      <li><strong>Deep Maroon</strong> — classic, timeless, never goes out of style</li>
+      <li><strong>Royal Violet or Purple</strong> — regal and dramatic, perfect for evening ceremonies</li>
+      <li><strong>Rani Pink</strong> — feminine and vibrant, popular for mehendi and engagement</li>
+      <li><strong>Emerald Green</strong> — fresh and striking, works beautifully for day ceremonies</li>
+    </ul>
+    <div class="article-tip">💡 Consider your skin tone — deeper colours like maroon and violet complement warm skin tones beautifully. Pinks and greens work well for all skin tones.</div>
+
+    <h2>2. Understand the Zari Weight</h2>
+    <p>Bridal Kanjivarams come in different zari weights — from moderate to very heavy. Heavier zari means more gold, more opulence and more weight to carry through the day.</p>
+    <p>For an all-day wedding, a medium-weight zari saree is more comfortable. Reserve very heavy bridal pieces for the main ceremony when you'll be seated or standing for photos.</p>
+
+    <h2>3. Look at the Pallu Design</h2>
+    <p>The pallu (the decorative end of the saree that drapes over the shoulder) is the showpiece of any Kanjivaram. For weddings, look for:</p>
+    <ul>
+      <li>Temple deity motifs — auspicious and traditional</li>
+      <li>Peacock designs — symbol of beauty and grace</li>
+      <li>Elephant motifs — symbol of prosperity</li>
+      <li>Floral medallion patterns — elegant and timeless</li>
+    </ul>
+
+    <h2>4. Plan Your Jewellery First</h2>
+    <p>Your jewellery and saree must complement each other. If you're wearing heavy temple gold jewellery, choose a saree with a cleaner body and let the pallu do the talking. If your jewellery is minimal, choose a saree with an all-over body pattern.</p>
+
+    <h2>5. Buy Early — Not Last Minute</h2>
+    <p>The best Kanjivaram sarees sell quickly. Bridal season (October to February) sees very high demand. We recommend shopping at least 2–3 months before your wedding date so you have time to get blouse stitching done as well.</p>
+
+    <h2>Budget Guide</h2>
+    <ul>
+      <li><strong>₹35,000 – ₹45,000</strong> — Pure silk with good zari, suitable for most weddings</li>
+      <li><strong>₹45,000 – ₹60,000</strong> — Heavy zari, intricate pallu, Silk Mark certified</li>
+      <li><strong>₹60,000+</strong> — Collector's pieces with real gold zari</li>
+    </ul>
+
+    <div class="article-cta">
+      <h3>Explore Our Bridal Collection</h3>
+      <p>Handpicked bridal Kanjivaram sarees — all Silk Mark certified, pan-India delivery.</p>
+      <a href="index.html">View Bridal Sarees →</a>
+    </div>
+  </div>
+
+  <!-- ARTICLE 3 -->
+  <div id="a3" class="article-section">
+    <button class="article-back" onclick="showGrid()">← Back to Blog</button>
+    <div class="blog-tag">Care Guide</div>
+    <h1>How to Store & Care for Your Silk Saree to Last Generations</h1>
+    <div class="article-meta">📅 October 2026 &nbsp;|&nbsp; ⏱ 4 min read &nbsp;|&nbsp; By MITRA</div>
+
+    <p>A pure silk Kanjivaram saree is an heirloom — not just a piece of clothing. With the right care, your saree can last 50–100 years and be passed down to your children and grandchildren. Here's exactly how to care for it.</p>
+
+    <h2>Washing Your Silk Saree</h2>
+    <p><strong>Never machine wash a Kanjivaram saree.</strong> The agitation damages the silk fibres and loosens the zari weave. Instead:</p>
+    <ul>
+      <li>Dry clean once a year or after every 3–4 wears</li>
+      <li>For a light refresh, air it out in shade for 2–3 hours after wearing</li>
+      <li>If hand washing is necessary, use cold water with a tiny amount of mild shampoo — never detergent</li>
+      <li>Never wring — gently press water out and dry flat in shade</li>
+    </ul>
+    <div class="article-tip">💡 Never dry a silk saree in direct sunlight — UV rays fade the colour and weaken silk fibres over time.</div>
+
+    <h2>Storing Your Silk Saree</h2>
+    <p>How you store your saree matters as much as how you wash it. Follow these rules:</p>
+    <ul>
+      <li><strong>Wrap in muslin cloth</strong> — never store in plastic. Silk needs to breathe. Plastic causes moisture buildup and yellowing.</li>
+      <li><strong>Re-fold every 6 months</strong> — fold lines weaken silk over time. Change the fold direction every few months.</li>
+      <li><strong>Store flat or rolled</strong> — avoid hanging for long periods as this stretches the fabric.</li>
+      <li><strong>Use neem leaves or cloves</strong> — natural insect repellents that don't damage silk, unlike chemical mothballs.</li>
+    </ul>
+
+    <h2>Caring for the Zari</h2>
+    <p>The gold zari border is the most delicate part of a Kanjivaram saree. To keep it bright:</p>
+    <ul>
+      <li>Avoid contact with perfume and deodorant — chemicals tarnish zari</li>
+      <li>Apply perfume before wearing the saree, never after</li>
+      <li>If zari tarnishes, gently rub with a soft dry cloth — never use polish or chemicals</li>
+    </ul>
+
+    <h2>What to Do After Wearing</h2>
+    <ol>
+      <li>Air the saree in shade for 2–3 hours before folding</li>
+      <li>Gently brush off any dust with a soft cloth</li>
+      <li>Re-fold and wrap in muslin</li>
+      <li>Store in a cool, dry place</li>
+    </ol>
+
+    <div class="article-tip">💡 The number one mistake people make — storing a saree immediately after wearing without airing it. Body moisture trapped in silk causes yellowing and weakens fibres.</div>
+
+    <h2>When to See a Professional</h2>
+    <p>If your saree has stains, damage to the zari or loose threads in the weave — take it to a silk saree specialist for restoration. Do not attempt to repair zari work at home.</p>
+
+    <div class="article-cta">
+      <h3>Own a Saree Worth Caring For</h3>
+      <p>MITRA's Kanjivaram sarees are made to last generations — certified pure silk, delivered to your door.</p>
+      <a href="index.html">Shop Now →</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 MITRA — Indian Ethnic Sarees &nbsp;|&nbsp; <a href="index.html">Shop</a> &nbsp;|&nbsp; <a href="mailto:info@elanmitra.com">info@elanmitra.com</a></p>
+</footer>
+
+<script>
+function showArticle(id){
+  document.getElementById('blogGrid').style.display='none';
+  document.querySelectorAll('.article-section').forEach(a=>a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showGrid(){
+  document.getElementById('blogGrid').style.display='block';
+  document.querySelectorAll('.article-section').forEach(a=>a.classList.remove('active'));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>

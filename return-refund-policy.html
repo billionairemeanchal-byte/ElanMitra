@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return & Refund Policy — ÉLAN | MITRA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #0F1923;
+      --gold: #C9A84C;
+      --brown: #7B4F00;
+      --cream: #FAF8F4;
+      --text: #1C1C1C;
+      --muted: #6B6B6B;
+      --border: #E2DDD6;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* Header */
+    .site-header {
+      background: var(--navy);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 4px;
+      text-decoration: none;
+    }
+    .brand-logo span {
+      color: var(--gold);
+      margin: 0 8px;
+      font-weight: 300;
+    }
+    .back-link {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--gold); }
+
+    /* Hero */
+    .policy-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #1a2d3d 100%);
+      color: #fff;
+      text-align: center;
+      padding: 64px 20px 52px;
+      position: relative;
+      overflow: hidden;
+    }
+    .policy-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center top, rgba(201,168,76,0.12) 0%, transparent 65%);
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--gold);
+      margin-bottom: 14px;
+      font-weight: 500;
+      position: relative;
+    }
+    .policy-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 5vw, 50px);
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .hero-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 1px;
+      position: relative;
+    }
+    .gold-line {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 20px auto 0;
+      opacity: 0.6;
+    }
+
+    /* Main layout */
+    .policy-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    /* Quick summary cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+    .summary-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+      padding: 22px 20px;
+      border-radius: 2px;
+    }
+    .summary-card .icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .summary-card h3 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      color: var(--navy);
+    }
+    .summary-card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* Sections */
+    .policy-section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+    }
+    .policy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .section-tag {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .policy-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+    .policy-section p {
+      font-size: 15px;
+      color: #3a3a3a;
+      margin-bottom: 14px;
+      font-weight: 300;
+    }
+    .policy-section ul, .policy-section ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    .policy-section li {
+      font-size: 15px;
+      color: #3a3a3a;
+      margin-bottom: 8px;
+      font-weight: 300;
+    }
+    .policy-section li strong {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* Highlight box */
+    .highlight-box {
+      background: #fff;
+      border-left: 3px solid var(--gold);
+      padding: 18px 22px;
+      margin: 20px 0;
+      border-radius: 0 2px 2px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Warning box */
+    .warning-box {
+      background: #FFF8F0;
+      border-left: 3px solid #D4721A;
+      padding: 18px 22px;
+      margin: 20px 0;
+      border-radius: 0 2px 2px 0;
+    }
+    .warning-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #7A3800;
+    }
+
+    /* Brand tabs */
+    .brand-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .brand-table th {
+      background: var(--navy);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 12px;
+    }
+    .brand-table th:first-child { border-radius: 0; }
+    .brand-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: #3a3a3a;
+      font-weight: 300;
+    }
+    .brand-table tr:nth-child(even) td { background: #f7f5f1; }
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .badge-yes { background: #e8f5e9; color: #2e7d32; }
+    .badge-no { background: #fce4ec; color: #c62828; }
+    .badge-partial { background: #fff3e0; color: #e65100; }
+
+    /* Process steps */
+    .steps-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: step-counter;
+    }
+    .steps-list li {
+      counter-increment: step-counter;
+      padding: 16px 16px 16px 56px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+      color: #3a3a3a;
+      font-weight: 300;
+    }
+    .steps-list li:last-child { border-bottom: none; }
+    .steps-list li::before {
+      content: counter(step-counter);
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      width: 26px;
+      height: 26px;
+      background: var(--navy);
+      color: var(--gold);
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Contact box */
+    .contact-box {
+      background: var(--navy);
+      color: #fff;
+      padding: 32px;
+      border-radius: 2px;
+      text-align: center;
+      margin-top: 8px;
+    }
+    .contact-box h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .contact-box p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    .contact-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .contact-link {
+      padding: 10px 24px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      transition: all 0.2s;
+      border-radius: 1px;
+    }
+    .contact-link:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* Footer */
+    .policy-footer {
+      background: var(--navy);
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .site-header { padding: 16px 20px; }
+      .policy-wrap { padding: 36px 16px 60px; }
+      .brand-table { font-size: 13px; }
+      .brand-table th, .brand-table td { padding: 10px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand-logo">ÉLAN <span>×</span> MITRA</a>
+    <a href="index.html" class="back-link">← Back to Store</a>
+  </header>
+
+  <!-- Hero -->
+  <div class="policy-hero">
+    <p class="hero-eyebrow">CUSTOMER CARE</p>
+    <h1>Return & Refund Policy</h1>
+    <p class="hero-sub">Last updated: October 2026</p>
+    <div class="gold-line"></div>
+  </div>
+
+  <div class="policy-wrap">
+
+    <!-- Quick Summary Cards -->
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="icon">📦</div>
+        <h3>RETURN WINDOW</h3>
+        <p>7 days from delivery date for eligible items</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">💳</div>
+        <h3>REFUND MODE</h3>
+        <p>Store credit or original payment method</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">🔄</div>
+        <h3>EXCHANGE</h3>
+        <p>Size/colour exchange within 7 days</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">⏱</div>
+        <h3>PROCESSING TIME</h3>
+        <p>Refunds processed within 7–10 business days</p>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="policy-section">
+      <span class="section-tag">01 — OVERVIEW</span>
+      <h2>Our Return Philosophy</h2>
+      <p>At ÉLAN and MITRA, we want you to love what you wear. If for any reason you are not completely satisfied with your purchase, we are here to help — within the terms outlined in this policy.</p>
+      <p>We follow a <strong>7-day return window</strong> from the date of delivery, in line with standard Indian e-commerce practices and consumer protection guidelines.</p>
+      <div class="highlight-box">
+        <p><strong>Note:</strong> All return requests must be raised within 7 days of the delivery date. Requests raised after this period will not be accepted under any circumstances.</p>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="policy-section">
+      <span class="section-tag">02 — ELIGIBILITY</span>
+      <h2>What Can Be Returned?</h2>
+      <p>Returns are accepted only if the following conditions are met:</p>
+      <ul>
+        <li>Item is <strong>unused, unwashed, and unworn</strong></li>
+        <li>All <strong>original tags, labels, and packaging</strong> are intact</li>
+        <li>Item is returned within <strong>7 days</strong> of delivery</li>
+        <li>Return request is raised via email or WhatsApp with <strong>unboxing video / photos</strong> as proof</li>
+        <li>Item is not from the <strong>non-returnable</strong> category listed below</li>
+      </ul>
+
+      <div class="warning-box">
+        <p>⚠️ <strong>Items without original packaging, tags removed, or showing signs of use/wash will not be accepted</strong> and will be returned to the customer at their expense.</p>
+      </div>
+    </div>
+
+    <!-- Section 3 — Brand wise -->
+    <div class="policy-section">
+      <span class="section-tag">03 — BRAND-WISE POLICY</span>
+      <h2>ÉLAN vs MITRA — Return Eligibility</h2>
+      <p>Return conditions vary slightly between our two brands given the nature of the products:</p>
+
+      <table class="brand-table">
+        <thead>
+          <tr>
+            <th>Product Type</th>
+            <th>Brand</th>
+            <th>Return</th>
+            <th>Exchange</th>
+            <th>Refund</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Blazers, Coats, Trousers</td>
+            <td>ÉLAN</td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-yes">Yes</span></td>
+          </tr>
+          <tr>
+            <td>Dresses, Skirts, Knit Tops</td>
+            <td>ÉLAN</td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-partial">Store Credit</span></td>
+          </tr>
+          <tr>
+            <td>Sarees (ready-to-wear)</td>
+            <td>MITRA</td>
+            <td><span class="badge badge-partial">Defect Only</span></td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-partial">Store Credit</span></td>
+          </tr>
+          <tr>
+            <td>Lehengas, Anarkali Sets</td>
+            <td>MITRA</td>
+            <td><span class="badge badge-partial">Defect Only</span></td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-partial">Store Credit</span></td>
+          </tr>
+          <tr>
+            <td>Kurtas, Khadi Wear</td>
+            <td>MITRA</td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-yes">Yes</span></td>
+            <td><span class="badge badge-yes">Yes</span></td>
+          </tr>
+          <tr>
+            <td>Dupattas, Scarves</td>
+            <td>MITRA</td>
+            <td><span class="badge badge-no">No</span></td>
+            <td><span class="badge badge-no">No</span></td>
+            <td><span class="badge badge-no">No</span></td>
+          </tr>
+          <tr>
+            <td>Sale / Discounted Items</td>
+            <td>Both</td>
+            <td><span class="badge badge-no">No</span></td>
+            <td><span class="badge badge-no">No</span></td>
+            <td><span class="badge badge-no">No</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 4 — Non returnable -->
+    <div class="policy-section">
+      <span class="section-tag">04 — NON-RETURNABLE ITEMS</span>
+      <h2>Items Not Eligible for Return</h2>
+      <p>The following items are <strong>strictly non-returnable and non-refundable</strong> under any circumstances:</p>
+      <ul>
+        <li>Items purchased during <strong>sale, discount, or promotional events</strong></li>
+        <li><strong>Customised or altered</strong> garments (stitched to measurements)</li>
+        <li><strong>Dupattas, scarves, and accessories</strong> for hygiene reasons</li>
+        <li>Items that have been <strong>worn, washed, dry-cleaned, or altered</strong> by the customer</li>
+        <li>Items with <strong>missing tags, labels, or original packaging</strong></li>
+        <li>Items reported after the <strong>7-day return window</strong></li>
+        <li>Gift cards and store credit vouchers</li>
+      </ul>
+      <div class="highlight-box">
+        <p>MITRA handcrafted ethnic wear (lehengas, sarees) is returnable <strong>only in case of a manufacturing defect or incorrect item delivery</strong>, not for personal preference or sizing concerns. We recommend checking our size guide before purchase.</p>
+      </div>
+    </div>
+
+    <!-- Section 5 — How to return -->
+    <div class="policy-section">
+      <span class="section-tag">05 — RETURN PROCESS</span>
+      <h2>How to Initiate a Return</h2>
+      <ol class="steps-list">
+        <li><strong>Raise a request</strong> — Email us at <strong>info@elanmitra.com</strong> within 7 days of delivery. Include your order number, reason for return, and clear photos/unboxing video of the item.</li>
+        <li><strong>Approval</strong> — Our team will review your request within 48 business hours and confirm eligibility. We reserve the right to reject returns that do not meet our policy conditions.</li>
+        <li><strong>Pack securely</strong> — Pack the item in its original packaging with all tags intact. Write your order ID on the outside of the parcel.</li>
+        <li><strong>Ship the item</strong> — For approved returns, we will share the return shipping address. <strong>Customers are responsible for return shipping costs</strong> unless the item is defective or incorrectly delivered.</li>
+        <li><strong>Inspection</strong> — Once we receive the item, it will be inspected within 3–5 business days. Items not meeting our return conditions will be sent back to the customer.</li>
+        <li><strong>Refund / Exchange</strong> — Approved refunds or exchanges will be processed within 7–10 business days of successful inspection.</li>
+      </ol>
+    </div>
+
+    <!-- Section 6 — Refunds -->
+    <div class="policy-section">
+      <span class="section-tag">06 — REFUNDS</span>
+      <h2>Refund Methods & Timeline</h2>
+      <p>Refunds are processed as follows depending on the payment method used:</p>
+      <ul>
+        <li><strong>UPI / Net Banking / Debit Card:</strong> Refund to original account within 7–10 business days</li>
+        <li><strong>Credit Card:</strong> Refund to original card within 7–10 business days (may take 1–2 billing cycles depending on your bank)</li>
+        <li><strong>Store Credit:</strong> Credited to your account within 48 hours — valid for 12 months from date of issue</li>
+        <li><strong>COD Orders:</strong> Refund via NEFT/bank transfer only. Customer must provide bank details at time of return request.</li>
+      </ul>
+      <div class="warning-box">
+        <p>⚠️ <strong>Original shipping charges are non-refundable.</strong> If your order qualified for free shipping, a standard shipping fee of ₹99 will be deducted from your refund amount.</p>
+      </div>
+    </div>
+
+    <!-- Section 7 — Damaged -->
+    <div class="policy-section">
+      <span class="section-tag">07 — DAMAGED / WRONG ITEMS</span>
+      <h2>Received a Defective or Wrong Item?</h2>
+      <p>We sincerely apologise if you have received a damaged, defective, or incorrect item. In such cases:</p>
+      <ul>
+        <li>Report within <strong>48 hours</strong> of delivery with photos and/or unboxing video</li>
+        <li>We will arrange a <strong>free pickup</strong> and send a replacement at no extra cost</li>
+        <li>If a replacement is not available, a <strong>full refund</strong> will be issued to your original payment method</li>
+      </ul>
+      <div class="highlight-box">
+        <p>We strongly recommend recording an <strong>unboxing video</strong> for every order. This is the easiest way to resolve any disputes quickly and ensures your claim is processed without delay.</p>
+      </div>
+    </div>
+
+    <!-- Section 8 — Cancellations -->
+    <div class="policy-section">
+      <span class="section-tag">08 — ORDER CANCELLATIONS</span>
+      <h2>Cancellation Policy</h2>
+      <ul>
+        <li><strong>Before dispatch:</strong> Orders can be cancelled within 12 hours of placing the order. Full refund will be issued.</li>
+        <li><strong>After dispatch:</strong> Orders cannot be cancelled once shipped. Please initiate a return after delivery.</li>
+        <li><strong>Custom/altered orders:</strong> Cannot be cancelled once production has begun.</li>
+      </ul>
+      <p>To cancel an order, email us immediately at <strong>info@elanmitra.com</strong> with your order number.</p>
+    </div>
+
+    <!-- Section 9 — Contact -->
+    <div class="policy-section">
+      <span class="section-tag">09 — CONTACT US</span>
+      <h2>Need Help?</h2>
+      <p>Our customer support team is available Monday to Saturday, 10 AM – 6 PM IST. You can reach us at <strong>info@elanmitra.com</strong></p>
+      <div class="contact-box">
+        <h3>We're Here to Help</h3>
+        <p>Reach out and our team will respond within 24–48 business hours</p>
+        <div class="contact-links">
+          <a href="mailto:info@elanmitra.com" class="contact-link">EMAIL US</a>
+          <a href="index.html" class="contact-link">BACK TO STORE</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="policy-footer">
+    © 2026 ÉLAN × MITRA. All rights reserved. &nbsp;|&nbsp; This policy is subject to change without prior notice.
+  </footer>
+
+</body>
+</html>
